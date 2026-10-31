@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Course work and projects for WDD 231 by Nadia Peralta Diaz.">
+    <meta name="author" content="Nadia Peralta Diaz">
+    <title>Home | Nadia Peralta Diaz</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="icon" href="images/logo.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="styles/style.css">
+    <script src="scripts/main.js" defer></script>
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="index.html" aria-label="Nadia Peralta Diaz home">
+        <img src="images/logo.svg" alt="" width="48" height="48">
+        <span>Nadia Peralta Diaz</span>
+      </a>
+      <button class="menu-toggle" type="button" aria-label="Open navigation" aria-expanded="false" aria-controls="primary-nav">
+        <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+          <path d="M4 7h16M4 12h16M4 17h16" />
+        </svg>
+      </button>
+    </header>
+    <nav id="primary-nav" class="primary-nav" aria-label="Main navigation">
+      <a href="index.html" aria-current="page">Home</a>
+      <a href="chamber/index.html">Chamber Project</a>
+      <a href="final/index.html">Final Project</a>
+    </nav>
+
+    <main>
+      <div class="page-heading">
+        <p class="eyebrow">WDD 231 - Web Frontend Development I</p>
+        <h1>Home</h1>
+      </div>
+
+      <div class="home-layout">
+        <section class="panel about-panel" aria-labelledby="about-heading">
+          <h2 class="panel-heading" id="about-heading">About Me</h2>
+          <div class="panel-content about-content">
+            <p>I'm 27 years old. I am from Cordoba, Argentina but I'm currently living in Buenos Aires City.</p>
+          </div>
+        </section>
+
+        <section class="panel photo-panel" aria-labelledby="photo-heading">
+          <h2 class="panel-heading" id="photo-heading">Student Photo</h2>
+          <div class="panel-content photo-content">
+            <div class="student-photo-frame">
+              <img class="student-photo" src="images/IMG_8270-optimized.jpg" alt="Portrait of Nadia Peralta Diaz" width="900" height="675" decoding="async">
+            </div>
+          </div>
+        </section>
+
+        <section class="panel certificate" aria-labelledby="certificate-heading">
+          <h2 class="panel-heading" id="certificate-heading">Web Certificate Courses</h2>
+          <div class="course-tools">
+            <div class="course-filters" role="group" aria-label="Filter certificate courses">
+              <button class="course-filter" type="button" data-filter="all" aria-pressed="true">All Courses</button>
+              <button class="course-filter" type="button" data-filter="CSE" aria-pressed="false">CSE Courses</button>
+              <button class="course-filter" type="button" data-filter="WDD" aria-pressed="false">WDD Courses</button>
+            </div>
+          </div>
+          <ul class="course-list" id="course-list" aria-label="Certificate courses"></ul>
+          <p class="course-summary" id="course-summary" aria-live="polite"></p>
+        </section>
+      </div>
+    </main>
+
+    <footer class="site-footer">
+      <div class="social-links" aria-label="Social media">
+        <a href="https://github.com/NadiaGomezP" aria-label="GitHub profile" target="_blank" rel="noopener noreferrer">
+          <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 .9a11.1 11.1 0 0 0-3.51 21.63c.56.1.76-.24.76-.54v-2.1c-3.1.68-3.76-1.32-3.76-1.32-.5-1.3-1.24-1.65-1.24-1.65-1.02-.7.08-.69.08-.69 1.12.08 1.71 1.15 1.71 1.15 1 .1.76 2.45 4.65 1.73.1-.73.39-1.23.7-1.51-2.48-.28-5.09-1.24-5.09-5.52 0-1.22.44-2.21 1.15-2.99-.12-.28-.5-1.42.11-2.95 0 0 .94-.3 3.05 1.14a10.6 10.6 0 0 1 5.55 0c2.11-1.43 3.04-1.14 3.04-1.14.61 1.53.23 2.67.11 2.95.72.78 1.15 1.77 1.15 2.99 0 4.29-2.61 5.23-5.1 5.51.4.35.75 1.03.75 2.08v3.08c0 .3.2.65.77.54A11.1 11.1 0 0 0 12 .9Z" /></svg>
+        </a>
+        <a href="https://www.linkedin.com/in/nadiaperaltadiaz/" aria-label="LinkedIn profile" target="_blank" rel="noopener noreferrer">
+          <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M20.45 2H3.55C2.69 2 2 2.68 2 3.52v16.96c0 .84.69 1.52 1.55 1.52h16.9c.86 0 1.55-.68 1.55-1.52V3.52c0-.84-.69-1.52-1.55-1.52ZM7.93 18.9H4.96V9.34h2.97v9.56ZM6.45 8.03a1.72 1.72 0 1 1 0-3.44 1.72 1.72 0 0 1 0 3.44Zm12.49 10.87h-2.96v-4.65c0-1.11-.02-2.54-1.55-2.54-1.55 0-1.79 1.21-1.79 2.46v4.73H9.68V9.34h2.84v1.31h.04c.4-.75 1.36-1.55 2.8-1.55 3 0 3.58 1.97 3.58 4.54v5.26Z" /></svg>
+        </a>
+      </div>
+      <p class="copyright">&copy; <span id="currentyear"></span> Nadia Peralta Diaz - Argentina</p>
+      <p class="modified">Last modified: <span id="lastModified"></span></p>
+    </footer>
+  </body>
+</html>
